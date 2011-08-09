@@ -9,7 +9,7 @@ Homepage: http://www.openpanel.com/openapp/
 Package: openapp-ruby
 Architecture: any
 Pre-Depends: openapp-backup, openapp-tuning
-Suggests: openapp-xtrabackup
+Suggests: openapp-xtrabackup, openpanel-openapp-mod-mysql
 Depends: rsync, openpanel-openapp-mod-user, openpanel-openapp-mod-apache2, openapp-phpmyadmin-installer, openpanel-openapp-mod-smtp, openpanel-openapp-mod-backup, libopenssl-ruby, ruby, libapache2-mod-passenger, libmysql-ruby, libsqlite3-ruby, librack-ruby, libi18n-ruby, libapache2-mod-php5, php5-mysql
 Provides: openapp-app
 Conflicts: openapp-app
