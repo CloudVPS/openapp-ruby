@@ -34,7 +34,7 @@ case "$1" in
 				openapp-ruby-passwd
 			fi
 
-			echo "Identify ourselve to openapp-tuning and run it"
+			echo "Identify ourself to openapp-tuning and run it"
 			mkdir -p /etc/openapp-tuning/
 			echo "ruby" > /etc/openapp-tuning/identity
 			[ -x /usr/sbin/openapp-tuning ] && openapp-tuning ruby start dorestart
