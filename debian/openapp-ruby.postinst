@@ -26,12 +26,12 @@ case "$1" in
 				openapp-backup-enmod ${SCRIPT}
 			done
 
-			echo "Run openapp-ruby-passwd"
+			echo "Run openapp-phpmyadmin-passwd"
 			if [ -r /etc/openapp-phpmyadmin/httpd.passwd ]; then
 				PASSWORD=$(cat /etc/openapp-phpmyadmin/httpd.passwd | cut -f2 -d:)
-				echo ${PASSWORD} | openapp-ruby-passwd stdin
+				echo ${PASSWORD} | openapp-phpmyadmin-passwd stdin
 			else
-				openapp-ruby-passwd
+				openapp-phpmyadmin-passwd
 			fi
 
 			echo "Identify ourself to openapp-tuning and run it"
